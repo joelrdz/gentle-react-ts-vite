@@ -33,6 +33,10 @@ const Home: React.FC<HomeProps> = () => {
       initialState={{
         pagination: { paginationModel: { pageSize } }
       }}
+      getRowId={(row: any) => row.id}
+      autoHeight
+      disableColumnSelector
+      disableRowSelectionOnClick
     />
   );
 };
