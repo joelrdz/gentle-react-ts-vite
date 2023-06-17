@@ -5,6 +5,7 @@ export type HomeProps = {}
 
 const Home: React.FC<HomeProps> = () => {
   const pageSize = 5;
+  const pageSizeOptions = [5, 10, 20];
   const columns = [
     {
       field: 'name',
@@ -33,6 +34,7 @@ const Home: React.FC<HomeProps> = () => {
       initialState={{
         pagination: { paginationModel: { pageSize } }
       }}
+      pageSizeOptions={pageSizeOptions}
       getRowId={(row: any) => row.id}
       autoHeight
       disableColumnSelector
