@@ -13,6 +13,18 @@ const Home: React.FC<HomeProps> = () => {
       minWidth: 150,
       renderCell: (params: GridRenderCellParams) => <>{params.value}</>,
     },
+    {
+      field: 'category',
+      headerName: 'Category',
+      flex: 1,
+      renderCell: (params: GridRenderCellParams) => <>{params.value}</>,
+    },
+    {
+      field: 'company',
+      headerName: 'Company',
+      flex: 1,
+      renderCell: (params: GridRenderCellParams) => <>{params.value}</>,
+    },
   ];
   return (
     <DataGrid
